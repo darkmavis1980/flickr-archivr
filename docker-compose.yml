@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb:10.6
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+    volumes:
+      - godb:/var/lib/mysql
+    ports:
+      - 3306:3306
+volumes:
+  godb:

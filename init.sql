@@ -1,0 +1,8 @@
+CREATE DATABASE flickr;
+
+CREATE TABLE flickr.photos (
+	id INT NOT NULL AUTO_INCREMENT,
+	filename VARCHAR(255) NOT NULL,
+	flickr_id VARCHAR(255) NOT NULL,
+	PRIMARY KEY (id)
+);
